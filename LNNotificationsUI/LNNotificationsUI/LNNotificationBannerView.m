@@ -129,8 +129,8 @@ static const CGFloat LNNotificationRelativeLabelCollapse = 5.0 * 60.0;
 		_appIcon.contentMode = UIViewContentModeScaleAspectFit;
 		_appIcon.layer.masksToBounds = YES;
 		_appIcon.layer.cornerRadius = 3.125;
-		_appIcon.layer.borderWidth = 1 / [UIScreen mainScreen].scale;
-		_appIcon.layer.borderColor = [[UIColor blackColor] colorWithAlphaComponent:0.2].CGColor;
+//		_appIcon.layer.borderWidth = 1 / [UIScreen mainScreen].scale;
+//		_appIcon.layer.borderColor = [[UIColor blackColor] colorWithAlphaComponent:0.2].CGColor;
 		_appIcon.translatesAutoresizingMaskIntoConstraints = NO;
 		
 		[_appIcon addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_appIcon(20)]" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_appIcon)]];
