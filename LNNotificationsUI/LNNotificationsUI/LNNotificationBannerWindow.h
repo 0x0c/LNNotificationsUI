@@ -10,6 +10,8 @@
 #import "LNNotification.h"
 #import "LNNotificationCenter.h"
 
+@interface _LNStatusBarStylePreservingViewController : UIViewController @end
+
 @interface LNNotificationBannerWindow : UIWindow
 
 @property (nonatomic, readonly) BOOL isNotificationViewShown;

@@ -52,7 +52,6 @@ static const CGFloat LNNotificationViewHeight = 68.0;
 
 @end
 
-@interface _LNStatusBarStylePreservingViewController : UIViewController @end
 @implementation _LNStatusBarStylePreservingViewController
 
 - (void)loadView
