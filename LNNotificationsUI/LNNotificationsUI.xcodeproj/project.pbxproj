@@ -24,6 +24,8 @@
 		39CA2E3719B8F364009C1792 /* LNNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 39CA2E3519B8F364009C1792 /* LNNotification.m */; };
 		39FC4F8919B8EFB400E45E37 /* LNNotificationsUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 39FC4F8819B8EFB400E45E37 /* LNNotificationsUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		39FDB3F219CB9A97001E5134 /* LNNotificationAppSettings_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 39FDB3F119CB9A97001E5134 /* LNNotificationAppSettings_Private.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E96AF30E1CFFC2CB0091DDCA /* LNStatusBarStylePreservingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = E96AF30C1CFFC2CB0091DDCA /* LNStatusBarStylePreservingViewController.h */; };
+		E96AF30F1CFFC2CB0091DDCA /* LNStatusBarStylePreservingLNStatusBarStylePreservingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96AF30D1CFFC2CB0091DDCA /* LNStatusBarStylePreservingLNStatusBarStylePreservingViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		39FC4F8719B8EFB400E45E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		39FC4F8819B8EFB400E45E37 /* LNNotificationsUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LNNotificationsUI.h; path = LNNotificationsUI/LNNotificationsUI.h; sourceTree = "<group>"; };
 		39FDB3F119CB9A97001E5134 /* LNNotificationAppSettings_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNNotificationAppSettings_Private.h; sourceTree = "<group>"; };
+		E96AF30C1CFFC2CB0091DDCA /* LNStatusBarStylePreservingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LNStatusBarStylePreservingViewController.h; sourceTree = "<group>"; };
+		E96AF30D1CFFC2CB0091DDCA /* LNStatusBarStylePreservingLNStatusBarStylePreservingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LNStatusBarStylePreservingLNStatusBarStylePreservingViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 				390001BB19B9133600EA4BF2 /* LNNotificationBannerView.m */,
 				390001B619B90FD600EA4BF2 /* LNNotificationBannerWindow.h */,
 				390001B719B90FD600EA4BF2 /* LNNotificationBannerWindow.m */,
+				E96AF30C1CFFC2CB0091DDCA /* LNStatusBarStylePreservingViewController.h */,
+				E96AF30D1CFFC2CB0091DDCA /* LNStatusBarStylePreservingLNStatusBarStylePreservingViewController.m */,
 				39883C7419CB79C1002499F5 /* LNNotificationAppSettings.h */,
 				39FDB3F119CB9A97001E5134 /* LNNotificationAppSettings_Private.h */,
 				39883C7519CB79C1002499F5 /* LNNotificationAppSettings.m */,
@@ -118,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39FC4F8919B8EFB400E45E37 /* LNNotificationsUI.h in Headers */,
+				E96AF30E1CFFC2CB0091DDCA /* LNStatusBarStylePreservingViewController.h in Headers */,
 				390001B819B90FD600EA4BF2 /* LNNotificationBannerWindow.h in Headers */,
 				390001BC19B9133600EA4BF2 /* LNNotificationBannerView.h in Headers */,
 				39883C7219CB756D002499F5 /* LNNotificationSettingsController.h in Headers */,
@@ -197,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E96AF30F1CFFC2CB0091DDCA /* LNStatusBarStylePreservingLNStatusBarStylePreservingViewController.m in Sources */,
 				391D31B719F9C3C40065E9D3 /* LNNotificationsAppSettingsController.m in Sources */,
 				39CA2E3719B8F364009C1792 /* LNNotification.m in Sources */,
 				39883C7319CB756D002499F5 /* LNNotificationSettingsController.m in Sources */,

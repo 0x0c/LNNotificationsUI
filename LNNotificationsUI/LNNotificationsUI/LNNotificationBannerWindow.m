@@ -23,54 +23,6 @@ static const CGFloat LNNotificationViewHeight = 68.0;
 
 @end
 
-@interface LNNotificationBannerWindow ()
-
-@property (nonatomic) BOOL ignoresAddedConstraints;
-
-@end
-
-@interface _LNWindowSizedView : UIView @end
-@implementation _LNWindowSizedView
-
-- (void)didMoveToWindow
-{
-	if(self.window == nil)
-	{
-		return;
-	}
-	
-	self.translatesAutoresizingMaskIntoConstraints = NO;
-	
-	BOOL oldVal = [(LNNotificationBannerWindow*)self.window ignoresAddedConstraints];
-	[(LNNotificationBannerWindow*)self.window setIgnoresAddedConstraints:NO];
-	
-	[self.window addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[view]|" options:0 metrics:nil views:@{@"view": self}]];
-	[self.window addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|[view]|" options:0 metrics:nil views:@{@"view": self}]];
-	
-	[(LNNotificationBannerWindow*)self.window setIgnoresAddedConstraints:oldVal];
-}
-
-@end
-
-@implementation _LNStatusBarStylePreservingViewController
-
-- (void)loadView
-{
-	self.view = [_LNWindowSizedView new];
-}
-
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-	return [[UIApplication sharedApplication] statusBarStyle];
-}
-
-- (BOOL)prefersStatusBarHidden
-{
-	return [[UIApplication sharedApplication] isStatusBarHidden];
-}
-
-@end
-
 @implementation LNNotificationBannerWindow
 {
 	LNNotificationBannerView* _notificationView;
@@ -101,7 +53,7 @@ static const CGFloat LNNotificationViewHeight = 68.0;
 		
 		self.backgroundColor = [[UIColor greenColor] colorWithAlphaComponent:0.0];
 
-		UIViewController* vc = [_LNStatusBarStylePreservingViewController new];
+		UIViewController* vc = [LNStatusBarStylePreservingViewController new];
 		[vc.view addSubview:_notificationView];
 		
 		[vc.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_notificationView]|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_notificationView)]];

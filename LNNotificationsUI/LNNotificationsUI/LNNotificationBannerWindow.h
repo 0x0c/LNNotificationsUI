@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "LNNotification.h"
 #import "LNNotificationCenter.h"
-
-@interface _LNStatusBarStylePreservingViewController : UIViewController @end
+#import "LNStatusBarStylePreservingViewController.h"
 
 @interface LNNotificationBannerWindow : UIWindow
 
 @property (nonatomic, readonly) BOOL isNotificationViewShown;
+@property (nonatomic) BOOL ignoresAddedConstraints;
 
 - (instancetype)initWithFrame:(CGRect)frame style:(LNNotificationBannerStyle)bannerStyle;
 
